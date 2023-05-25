@@ -4,22 +4,18 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.interactions.commands.Command;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
-import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
-import net.dv8tion.jda.api.requests.restaction.CommandListUpdateAction;
 import org.bot.discord.peppy.commands.BotCommands;
-
-import javax.swing.text.html.Option;
+import org.bot.discord.peppy.characters.ButtonListeners;
 
 public class PeppyDiscordBot {
 
     public static void main(String[] args) throws InterruptedException {
 
-        JDA bot = JDABuilder.createDefault("MTEwODgyOTgyOTg3NDMxOTM4MQ.G0Kt4K.9V3UbeMn_vnNeRXkdPXyWtJcFNNW1qa6ysngd4")
-                .setActivity(Activity.playing("Honkai: Star Rail!"))
-                .addEventListeners(new BotCommands())
+        JDA bot = JDABuilder.createDefault("MTEwODgyOTgyOTg3NDMxOTM4MQ.GbZtzY.8p-aoBAoTh52EK3BbvQK0VtGFOKsjTrLHO2uHg")
+                .setActivity(Activity.playing("Honkai: Star Rail"))
+                .addEventListeners(new BotCommands(), new ButtonListeners())
                 .build().awaitReady();
 
         // Global Commands and Guild Commands
@@ -44,6 +40,8 @@ public class PeppyDiscordBot {
                     )
                     .queue();
             guild.upsertCommand("seele", "Returns information on Seele").queue();
+            guild.upsertCommand("bailu", "Returns information on Bailu").queue();
+            guild.upsertCommand("jing-yuan", "Returns information on Jing Yuan").queue();
         }
 
 //        CommandListUpdateAction commands = bot.updateCommands();

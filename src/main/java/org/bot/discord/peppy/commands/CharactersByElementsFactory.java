@@ -14,29 +14,14 @@ public class CharactersByElementsFactory {
         }
         String element = inputElement.getAsString();
         switch (element) {
-            case "physical":
-                characters.physicalCharacters(event);
-                break;
-            case "fire":
-                characters.fireCharacters(event);
-                break;
-            case "ice":
-                characters.iceCharacters(event);
-                break;
-            case "lightning":
-                characters.lightningCharacters(event);
-                break;
-            case "wind":
-                characters.windCharacters(event);
-                break;
-            case "quantum":
-                characters.quantumCharacters(event);
-                break;
-            case "imaginary":
-                characters.imaginaryCharacters(event);
-                break;
-            default:
-                event.reply("Not a valid element.").queue();
+            case "physical" -> characters.physicalCharacters(event);
+            case "fire" -> characters.fireCharacters(event);
+            case "ice" -> characters.iceCharacters(event);
+            case "lightning" -> characters.lightningCharacters(event);
+            case "wind" -> characters.windCharacters(event);
+            case "quantum" -> characters.quantumCharacters(event);
+            case "imaginary" -> characters.imaginaryCharacters(event);
+            default -> event.reply("Not a valid element.").queue();
         }
     }
 }
