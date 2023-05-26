@@ -13,7 +13,7 @@ public class PeppyDiscordBot {
 
     public static void main(String[] args) throws InterruptedException {
 
-        JDA bot = JDABuilder.createDefault("MTEwODgyOTgyOTg3NDMxOTM4MQ.GbZtzY.8p-aoBAoTh52EK3BbvQK0VtGFOKsjTrLHO2uHg")
+        JDA bot = JDABuilder.createDefault("MTEwODgyOTgyOTg3NDMxOTM4MQ.GZUL05.WWDOfrIxNhD5zq7H2Je-fegU-aVbbAS31pX9HY")
                 .setActivity(Activity.playing("Honkai: Star Rail"))
                 .addEventListeners(new BotCommands(), new ButtonListeners())
                 .build().awaitReady();
@@ -42,6 +42,10 @@ public class PeppyDiscordBot {
             guild.upsertCommand("seele", "Returns information on Seele").queue();
             guild.upsertCommand("bailu", "Returns information on Bailu").queue();
             guild.upsertCommand("jing-yuan", "Returns information on Jing Yuan").queue();
+            guild.upsertCommand("qingque", "Returns information on Qingque").queue();
+            guild.upsertCommand("tingyun", "Returns information on Tingyun").queue();
+            guild.upsertCommand("serval", "Returns information on Serval").queue();
+            guild.upsertCommand("arlan", "Returns information on Arlan").queue();
         }
 
 //        CommandListUpdateAction commands = bot.updateCommands();

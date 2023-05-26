@@ -40,14 +40,10 @@ public class ButtonListeners extends ListenerAdapter {
             case "seele" -> character.getSeeleBuild(event);
             case "bailu" -> character.getBailuBuild(event);
             case "jing-yuan" -> character.getJingYuanBuild(event);
-        }
-    }
-
-    private static void getCharacterTeam(@NotNull ButtonInteractionEvent event, Characters character) {
-        switch (lastCommand) {
-            case "seele" -> character.getSeeleTeam(event);
-            case "bailu" -> character.getBailuTeam(event);
-            case "jing-yuan" -> character.getJingYuanTeam(event);
+            case "qingque" -> character.getQingqueBuild(event);
+            case "tingyun" -> character.getTingyunBuild(event);
+            case "serval" -> character.getServalBuild(event);
+            case "arlan" -> character.getArlanBuild(event);
         }
     }
 
@@ -56,6 +52,22 @@ public class ButtonListeners extends ListenerAdapter {
             case "seele" -> character.getSeeleAscension(event);
             case "bailu" -> character.getBailuAscension(event);
             case "jing-yuan" -> character.getJingYuanAscension(event);
+            case "qingque" -> character.getQingqueAscension(event);
+            case "tingyun" -> character.getTingyunAscension(event);
+            case "serval" -> character.getServalAscension(event);
+            case "arlan" -> character.getArlanAscension(event);
+        }
+    }
+
+    private static void getCharacterTeam(@NotNull ButtonInteractionEvent event, Characters character) {
+        switch (lastCommand) {
+            case "seele" -> character.getSeeleTeam(event);
+            case "bailu" -> character.getBailuTeam(event);
+            case "jing-yuan" -> character.getJingYuanTeam(event);
+            case "qingque" -> character.getQingqueTeam(event);
+            case "tingyun" -> character.getTingyunTeam(event);
+            case "serval" -> character.getServalTeam(event);
+            case "arlan" -> character.getArlanTeam(event);
         }
     }
 }

@@ -28,4 +28,36 @@ public interface Characters {
     void getJingYuanAscension(ButtonInteractionEvent event);
 
     void getJingYuanTeam(ButtonInteractionEvent event);
+
+    void qingque(SlashCommandInteractionEvent event);
+
+    void getQingqueBuild(ButtonInteractionEvent event);
+
+    void getQingqueAscension(ButtonInteractionEvent event);
+
+    void getQingqueTeam(ButtonInteractionEvent event);
+
+    void tingyun(SlashCommandInteractionEvent event);
+
+    void getTingyunBuild(ButtonInteractionEvent event);
+
+    void getTingyunAscension(ButtonInteractionEvent event);
+
+    void getTingyunTeam(ButtonInteractionEvent event);
+
+    void serval(SlashCommandInteractionEvent event);
+
+    void getServalBuild(ButtonInteractionEvent event);
+
+    void getServalAscension(ButtonInteractionEvent event);
+
+    void getServalTeam(ButtonInteractionEvent event);
+
+    void arlan(SlashCommandInteractionEvent event);
+
+    void getArlanBuild(ButtonInteractionEvent event);
+
+    void getArlanAscension(ButtonInteractionEvent event);
+
+    void getArlanTeam(ButtonInteractionEvent event);
 }

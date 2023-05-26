@@ -31,6 +31,22 @@ public class BotCommands extends ListenerAdapter {
                 ButtonListeners.setLastCommand("jing-yuan");
                 character.jingyuan(event);
             }
+            case "qingque" -> {
+                ButtonListeners.setLastCommand("qingque");
+                character.qingque(event);
+            }
+            case "tingyun" -> {
+                ButtonListeners.setLastCommand("tingyun");
+                character.tingyun(event);
+            }
+            case "serval" -> {
+                ButtonListeners.setLastCommand("serval");
+                character.serval(event);
+            }
+            case "arlan" -> {
+                ButtonListeners.setLastCommand("arlan");
+                character.arlan(event);
+            }
         }
     }
 }

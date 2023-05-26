@@ -65,4 +65,84 @@ public class GetCharacterInfo implements Characters {
         jingyuan.jingyuanTeam(event);
     }
 
+    public void qingque(SlashCommandInteractionEvent event) {
+        Qingque qingque = new Qingque();
+        qingque.qingqueInfo(event);
+    }
+
+    public void getQingqueBuild(ButtonInteractionEvent event) {
+        Qingque qingque = new Qingque();
+        qingque.qingqueBuild(event);
+    }
+
+    public void getQingqueAscension(ButtonInteractionEvent event) {
+        Qingque qingque = new Qingque();
+        qingque.qingqueAscension(event);
+    }
+
+    public void getQingqueTeam(ButtonInteractionEvent event) {
+        Qingque qingque = new Qingque();
+        qingque.qingqueTeam(event);
+    }
+
+    public void tingyun(SlashCommandInteractionEvent event) {
+        Tingyun tingyun = new Tingyun();
+        tingyun.tingyunInfo(event);
+    }
+
+    public void getTingyunBuild(ButtonInteractionEvent event) {
+        Tingyun tingyun = new Tingyun();
+        tingyun.tingyunBuild(event);
+    }
+
+    public void getTingyunAscension(ButtonInteractionEvent event) {
+        Tingyun tingyun = new Tingyun();
+        tingyun.tingyunAscension(event);
+    }
+
+    public void getTingyunTeam(ButtonInteractionEvent event) {
+        Tingyun tingyun = new Tingyun();
+        tingyun.tingyunTeam(event);
+    }
+
+    public void serval(SlashCommandInteractionEvent event) {
+        Serval serval = new Serval();
+        serval.servalInfo(event);
+    }
+
+    public void getServalBuild(ButtonInteractionEvent event) {
+        Serval serval = new Serval();
+        serval.servalBuild(event);
+    }
+
+    public void getServalAscension(ButtonInteractionEvent event) {
+        Serval serval = new Serval();
+        serval.servalAscension(event);
+    }
+
+    public void getServalTeam(ButtonInteractionEvent event) {
+        Serval serval = new Serval();
+        serval.servalTeam(event);
+    }
+
+    public void arlan(SlashCommandInteractionEvent event) {
+        Arlan arlan = new Arlan();
+        arlan.arlanInfo(event);
+    }
+
+    public void getArlanBuild(ButtonInteractionEvent event) {
+        Arlan arlan = new Arlan();
+        arlan.arlanBuild(event);
+    }
+
+    public void getArlanAscension(ButtonInteractionEvent event) {
+        Arlan arlan = new Arlan();
+        arlan.arlanAscension(event);
+    }
+
+    public void getArlanTeam(ButtonInteractionEvent event) {
+        Arlan arlan = new Arlan();
+        arlan.arlanTeam(event);
+    }
+
 }
